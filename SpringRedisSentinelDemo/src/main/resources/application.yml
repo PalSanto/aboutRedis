@@ -1,0 +1,13 @@
+logging:
+  level:
+    io.lettuce.core: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
+
+spring:
+  redis:
+    sentinel:  #哨兵模式
+      master:  #master 名称
+      nodes:   #节点ip地址
+    #cluster:  #分片集群
+       #nodes:
